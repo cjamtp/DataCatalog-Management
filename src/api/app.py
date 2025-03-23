@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from loguru import logger
 
-from src.api.routes import business_objects, data_elements, domains, rules, search
+from src.api.routes import ai_analysis, business_objects, data_elements, domains, rules, search
 from src.config import settings
 from src.utils.errors import CatalogError
 
@@ -66,6 +66,11 @@ def create_app() -> FastAPI:
         search.router,
         prefix=f"{settings.API_PREFIX}/search",
         tags=["Search"],
+    )
+    app.include_router(
+        ai_analysis.router,
+        prefix=f"{settings.API_PREFIX}/ai",
+        tags=["AI Analysis"],
     )
     
     @app.get("/", tags=["Health"])
