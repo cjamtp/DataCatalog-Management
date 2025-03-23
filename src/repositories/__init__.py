@@ -1,0 +1,1 @@
+"""Repository classes for data catalog entities."""
