@@ -1,1 +1,0 @@
-"""Streamlit application for the Data Catalog Management System."""
