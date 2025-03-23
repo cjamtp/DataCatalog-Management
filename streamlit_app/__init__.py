@@ -1,1 +1,1 @@
-"""Streamlit application for testing the DataCatalog-Management APIs."""
+"""Streamlit application for the Data Catalog Management System."""
