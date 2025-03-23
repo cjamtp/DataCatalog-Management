@@ -1,0 +1,1 @@
+"""Streamlit application for testing the Data Catalog Management System."""
